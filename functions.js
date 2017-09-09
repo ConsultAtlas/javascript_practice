@@ -134,3 +134,119 @@ function tipAmount(amt,service,people) {
 tipAmount(100, 'good', 5);
 */
 
+//Print the Square
+/*function pSquare(num1) {
+	
+	for (i = 0; i < num1; i++) {
+		var aster = "";
+		for (z = 0; z < num1; z++) {
+			aster += "*";
+		}
+		console.log(aster);
+
+	}
+}
+
+pSquare(5);*/
+/*
+function box1(width, height) {
+	for (i = 0; i < height; i++) {
+		var aster = "";
+		for (j = 0; j < width; j++) {
+			if (j = 0 or j = (width -1)) {
+				console.log("*".repeat(width))
+			}
+			else {
+				console.log(aster = '*' + " ".repeat(width-2) + '*';)
+			}
+
+		}
+	}
+}
+*/
+//Solution
+/*
+function printBox(width, height) {
+	var star = "*";
+	var space = " ";
+
+	console.log(star.repeat(width));
+
+	for (var i = 0; i < height-2; i++) {
+		console.log("*" + space.repeat(width-2) + "*");
+	}
+
+	console.log(star.repeat(width));
+
+}		
+
+printBox(10, 10);	
+*/
+
+//Ceaser Cipher
+/*
+function ceaserCipher(message, offset) {
+	var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+	var output = '';
+
+	for( var i=0; i < message.length; i++) {
+		var letter = message[i];
+
+		var position = alphabet.indexOf(letter); // position is an integer
+
+		var newPosition = position - offset; // also an integer. need a conditional to deal with an offset that makes the position negative.
+		if (newPosition < 0) {
+			newPosition += 26;
+		}
+
+		var newLetter = alphabet[newPosition]; // selects the letter from alphabet based on the offset position
+
+		output += newLetter;
+	}
+	console.log(output);
+}
+
+ceaserCipher('adam', 2);
+*/
+/*
+function positiveNumbers(array) {
+	//return a new array with just the positive numbers in the array
+	var newArray = [];
+
+	for (var i = 0; i < array.length; i++) {
+		var number = array[i];
+		
+		if (number > 0) {
+			newArray.push(number);
+		} 
+	}
+		return newArray;
+}
+
+console.log(positiveNumbers([-4,-2,-3,4,5,9,8]));
+*/
+
+function matrixMultiply(array, array1) {
+	var results = [];
+
+	var row1col1 = array[0][0]*array1[0][0]+array[0][1]*array1[1][0];
+	var row1col2 = array[0][0]*array1[0][1]+array[0][1]*array1[1][1];
+	var row2col1 = array[1][0]*array1[0][0]+array[1][1]*array1[1][0];
+	var row2col2 = array[1][0]*array1[0][1]+array[1][1]*array1[1][1];
+
+	results.push([row1col1, row1col2]);
+	results.push([row2col1, row2col2]);
+
+	return results;
+
+}
+
+console.log(matrixMultiply([[2,4],[3,4]],[[5,2],[3,1]]));
+
+
+
+
+
+
+
+
