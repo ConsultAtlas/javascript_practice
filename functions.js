@@ -225,7 +225,7 @@ function positiveNumbers(array) {
 
 console.log(positiveNumbers([-4,-2,-3,4,5,9,8]));
 */
-
+/*
 function matrixMultiply(array, array1) {
 	var results = [];
 
@@ -242,7 +242,7 @@ function matrixMultiply(array, array1) {
 }
 
 console.log(matrixMultiply([[2,4],[3,4]],[[5,2],[3,1]]));
-
+*/
 
 
 
