@@ -19,7 +19,9 @@ var result = array.map(function(element){
 });
 
 console.log(result);
-*/
+
+
+
 var room = [
   {
     name: "Trish",
@@ -44,3 +46,13 @@ if (everyonePresent) {
 } else {
   console.log("someone is missing!")
 }
+*/
+
+var numbers = [0,5,2,4,4,1];
+
+var sortedNumbers = numbers.sort(function(number1, number2){
+  return number1 - number2;
+})
+
+console.log(numbers);
+console.log(sortedNumbers);
