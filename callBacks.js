@@ -20,9 +20,11 @@ var result = array.map(function(element){
 
 console.log(result);
 
+*/
 
 
-var room = [
+/*
+var DCClass = [
   {
     name: "Trish",
     isPresent: true
@@ -55,4 +57,4 @@ var sortedNumbers = numbers.sort(function(number1, number2){
 })
 
 console.log(numbers);
-console.log(sortedNumbers);
+//console.log(sortedNumbers);
