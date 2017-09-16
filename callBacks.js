@@ -128,7 +128,7 @@ var habitableCities2 = cities2.map(function(e){ // selects all of the names and 
 
 console.log(habitableCities2);
 */
-
+/*
 /////*******Good Job!********
 var people = [
   'Dom',
@@ -151,3 +151,35 @@ var people = [
 var goodJob = people.forEach(function(element){
   console.log("Good Job " + element + "!");
 });
+*/
+
+////*************** Sort an array ***************
+var people = [
+  'Dom',
+  'Lyn',
+  'Kirk',
+  'Autumn',
+  'Trista',
+  'Jesslyn',
+  'Kevin',
+  'John',
+  'Eli',
+  'Juan',
+  'Robert',
+  'Keyur',
+  'Jason',
+  'Che',
+  'Ben'
+];
+
+var alphaNames = people.sort(function(name1, name2){
+  if (name1 < name2) {
+        return -1;
+    }
+    if (name2 < name1) {
+        return 1;
+    }
+    return 0;
+});
+
+console.log(alphaNames);
