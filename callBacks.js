@@ -109,7 +109,7 @@ var habitableCities = cities.filter(function(e){
 
 console.log(habitableCities);
 */
-
+/*
 ////*************** Cities 2 ******************
 var cities2 = [
   { name: 'Los Angeles',
@@ -127,3 +127,27 @@ var habitableCities2 = cities2.map(function(e){ // selects all of the names and 
 })
 
 console.log(habitableCities2);
+*/
+
+/////*******Good Job!********
+var people = [
+  'Dom',
+  'Lyn',
+  'Kirk',
+  'Autumn',
+  'Trista',
+  'Jesslyn',
+  'Kevin',
+  'John',
+  'Eli',
+  'Juan',
+  'Robert',
+  'Keyur',
+  'Jason',
+  'Che',
+  'Ben'
+];
+
+var goodJob = people.forEach(function(element){
+  console.log("Good Job " + element + "!");
+});
