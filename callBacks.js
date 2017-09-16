@@ -92,6 +92,8 @@ console.log(newNumberSquared);
 */
 /*
 ///************** Cities 1 ****************
+Write a function which takes an array of city objects as input and returns a new array containing the cities whose temperature is cooler than 70 degrees.
+
 var cities = [
   { name: 'Los Angeles',
     temperature: 60.0},
@@ -111,6 +113,8 @@ console.log(habitableCities);
 */
 /*
 ////*************** Cities 2 ******************
+Write a function which takes an array of city objects like the above problem as input and returns an array of the cities names.
+
 var cities2 = [
   { name: 'Los Angeles',
     temperature: 60.0},
@@ -154,6 +158,8 @@ var goodJob = people.forEach(function(element){
 */
 /*
 ////*************** Sort an array ***************
+Given an array of strings such the array of names given in the previous problem, sort them by alphabetically order.
+
 var people = [
   'Dom',
   'Lyn',
@@ -187,6 +193,8 @@ console.log(alphaNames);
 
 /*
 ////*************** sort an array 2 *******************
+Sort the same array, but not by alphabetically order, but by how long each name is, shortest name first.
+
 var people = [
   'Dom',
   'Lyn',
