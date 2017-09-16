@@ -49,7 +49,7 @@ if (everyonePresent) {
   console.log("someone is missing!")
 }
 */
-
+/*
 var numbers = [0,5,2,4,4,1];
 
 var sortedNumbers = numbers.sort(function(number1, number2){
@@ -58,3 +58,24 @@ var sortedNumbers = numbers.sort(function(number1, number2){
 
 console.log(numbers);
 //console.log(sortedNumbers);
+*/
+/*
+////*********** Positive Numbers ************
+var pNumbers = [-10, -4, -1, 0, 1, 4, 6, 8,10];
+
+var newPNumbers = pNumbers.filter(function(element){
+  return element > 0;
+});
+
+console.log(newPNumbers);
+*/
+
+///************ Even Numbers **************
+
+var eNumbers = [-10, -4, -1, 0, 1, 4, 6, 8,10];
+
+var newENumbers = eNumbers.filter(function(element){
+  return (element % 2 == 0);
+})
+
+console.log(newENumbers);
