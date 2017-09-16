@@ -90,3 +90,40 @@ var newNumberSquared = numberSquared.map(function(element) {
 
 console.log(newNumberSquared);
 */
+/*
+///************** Cities 1 ****************
+var cities = [
+  { name: 'Los Angeles',
+    temperature: 60.0},
+  { name: 'Atlanta',
+    temperature: 52.0 },
+  { name: 'Detroit',
+    temperature: 48.0 },
+  { name: 'New York',
+    temperature: 80.0 }
+];
+
+var habitableCities = cities.filter(function(e){
+  return e.temperature < 70;
+})
+
+console.log(habitableCities);
+*/
+
+////*************** Cities 2 ******************
+var cities2 = [
+  { name: 'Los Angeles',
+    temperature: 60.0},
+  { name: 'Atlanta',
+    temperature: 52.0 },
+  { name: 'Detroit',
+    temperature: 48.0 },
+  { name: 'New York',
+    temperature: 80.0 }
+];
+
+var habitableCities2 = cities2.map(function(e){ // selects all of the names and 'maps' them to a new array
+  return e.name;
+})
+
+console.log(habitableCities2);
