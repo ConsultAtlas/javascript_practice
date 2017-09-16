@@ -61,6 +61,8 @@ console.log(numbers);
 */
 /*
 ////*********** Positive Numbers ************
+Write a function which takes an array of numbers as input and returns a new array containing only the positive numbers in the given array.
+
 var pNumbers = [-10, -4, -1, 0, 1, 4, 6, 8,10];
 
 var newPNumbers = pNumbers.filter(function(element){
@@ -71,7 +73,7 @@ console.log(newPNumbers);
 */
 /*
 ///************ Even Numbers **************
-
+Write a function which takes an array of numbers as input and returns a new array containing only the even numbers in the given array.
 var eNumbers = [-10, -4, -1, 0, 1, 4, 6, 8,10];
 
 var newENumbers = eNumbers.filter(function(element){
@@ -82,6 +84,8 @@ console.log(newENumbers);
 */
 /*
 ///*************** Square the Numbers *********************
+Write a function which takes an array of numbers as input and returns a new array containing result of squaring each of the numbers in the given array by two. Example: squareTheNumbers([1, 2, 3]) should give [1, 4, 9].
+
 var numberSquared = [-10, -4, -1, 0, 1, 4, 6, 8,10];
 
 var newNumberSquared = numberSquared.map(function(element) {
@@ -227,3 +231,33 @@ var numberNames = people.sort(function(name1, name2){
 
 console.log(numberNames);
 */
+
+/////*************** Sort an array 3 ********************
+var arr = [
+  [1, 3, 4],
+  [2, 4, 6, 8],
+  [3, 6]
+];
+
+var newArray = arr.sort(function(array1, array2){
+  // Weneed to tell sort() whether array1 comes before array2 or not
+  // If array1 comes before array2, return a negative numberNames
+  //otherwise, return a positive number.
+
+  var summingFunction = function(accumulator, number){
+    return accumulator + number; // this value that we returnw illbe passed in accumulator.
+  };
+
+  var array1Sum = array1.reduce(summingFunction, 0 /* initial value */);
+
+  var array2Sum = array2.reduce(summingFunction, 0 /* initial value */);
+
+  if(/* the sum of array1's elements < the sum of array2's elements */) {
+
+  } else {
+
+}
+});
+
+
+console.log(arr);
