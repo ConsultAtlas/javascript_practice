@@ -152,7 +152,7 @@ var goodJob = people.forEach(function(element){
   console.log("Good Job " + element + "!");
 });
 */
-
+/*
 ////*************** Sort an array ***************
 var people = [
   'Dom',
@@ -183,3 +183,39 @@ var alphaNames = people.sort(function(name1, name2){
 });
 
 console.log(alphaNames);
+*/
+
+/*
+////*************** sort an array 2 *******************
+var people = [
+  'Dom',
+  'Lyn',
+  'Kirk',
+  'Autumn',
+  'Trista',
+  'Jesslyn',
+  'Kevin',
+  'John',
+  'Eli',
+  'Juan',
+  'Robert',
+  'Keyur',
+  'Jason',
+  'Che',
+  'Ben'
+];
+
+var numberNames = people.sort(function(name1, name2){
+  if (name1.length < name2.length) {
+        return -1;
+  }
+  if (name2.length < name1.length) {
+        return 1;
+  }
+  if (name2.length = name1.length) {
+
+  }return 0;
+});
+
+console.log(numberNames);
+*/
