@@ -69,7 +69,7 @@ var newPNumbers = pNumbers.filter(function(element){
 
 console.log(newPNumbers);
 */
-
+/*
 ///************ Even Numbers **************
 
 var eNumbers = [-10, -4, -1, 0, 1, 4, 6, 8,10];
@@ -79,3 +79,14 @@ var newENumbers = eNumbers.filter(function(element){
 })
 
 console.log(newENumbers);
+*/
+/*
+///*************** Square the Numbers *********************
+var numberSquared = [-10, -4, -1, 0, 1, 4, 6, 8,10];
+
+var newNumberSquared = numberSquared.map(function(element) {
+  return element*element;
+})
+
+console.log(newNumberSquared);
+*/
