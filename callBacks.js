@@ -231,7 +231,7 @@ var numberNames = people.sort(function(name1, name2){
 
 console.log(numberNames);
 */
-
+/*
 /////*************** Sort an array 3 ********************
 var arr = [
   [1, 3, 4],
@@ -248,16 +248,61 @@ var newArray = arr.sort(function(array1, array2){
     return accumulator + number; // this value that we returnw illbe passed in accumulator.
   };
 
-  var array1Sum = array1.reduce(summingFunction, 0 /* initial value */);
+  var array1Sum = array1.reduce(summingFunction, 0 );/*
 
-  var array2Sum = array2.reduce(summingFunction, 0 /* initial value */);
+  var array2Sum = array2.reduce(summingFunction, 0 );/*
 
-  if(/* the sum of array1's elements < the sum of array2's elements */) {
-
+  if(/* the sum of array1's elements < the sum of array2's elements *//* array1Sum < array2Sum) {
+    return -1;
   } else {
+    return 1;
+  }
 
-}
 });
 
 
 console.log(arr);
+*/
+//****************   Call 3 times *******************
+/*
+function call3Times(fun) {
+  fun();
+  fun();
+  fun();
+}
+
+var hello = function() {
+  console.log("Hello World");
+}
+call3Times(hello);
+*/
+/*
+////***************** Acronym **************
+// Write a function acronym that takes an array of words as argument and returns the acronym of the words
+// Use the reduce method to do this.
+
+var array = (['very', 'important', 'person']);
+
+//var array2 = (['national', 'aeronautics', 'space', 'administration']);
+
+
+function acronym(words) {
+  return words.reduce(function(accumulator, word) {
+    var firstLetter = word[0].toUpperCase();
+    return accumulator + firstLetter ;
+  }, "");
+
+}
+
+console.log(acronym(array)); // We should see VIP
+*/
+
+/// ******************** Bonus Map *************************
+// Implement your own custom map function which takes two arguments: an array arr and a function fun.
+// It will return a new array, with each of its results being the result of calling fun with each array element.
+
+function map(arr, fun){
+  var newArray = [];
+
+  return newArray;
+}
